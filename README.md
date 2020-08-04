@@ -38,11 +38,70 @@ This will create a hole structure for a React App inside a **web** folder. To in
 ```zsh
     yarn start
 ```
-The next step is to clean the application. You need to delete the list below:
- - README.md
- - src/App.css
- - src/index.css
- - src/App.test.tsx
- - src/logo.svg
- - src/serviceWorker.ts
- - src/setupTests.ts
+The next step is to clean the application. You must delete the list below:
+
+ - web/README.md
+ - web/src/App.css
+ - web/src/index.css
+ - web/src/App.test.tsx
+ - web/src/logo.svg
+ - web/src/serviceWorker.ts
+ - web/src/setupTests.ts
+ - web/public/favicon.ico
+ - web/public/logo192.png
+ - web/public/logo512.png
+ - web/public/manifest.json
+ - web/public/robots.txt
+
+After that, the template app will break, so it is necessary to remove all the references to the deleted files within **App.tsx** and **index.tsx**. The contents of this files should look something like the following:
+
+ - App.tsx
+ ```JavaScript
+    import React from 'react';
+
+    function App() {
+      return (
+        <div className="App">
+          <h1>Hello World!</h1>
+        </div>
+      );
+    }
+
+    export default App;
+ ```
+ - index.tsx
+ ```JavaScript
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import App from './App';
+
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
+ ```
+If everything is correct, when you run `yarn start`, a browser window will open with the text "Hello World".
+Finally, it is necessary to clean the **index.html** file from the public folder to make it as below:
+
+ - index.html
+ ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+    
+        <title>Proffy</title>
+      </head>
+      <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+      </body>
+    </html>
+ ```
+
+ 
