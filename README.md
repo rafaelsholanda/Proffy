@@ -4,31 +4,40 @@ Application developed at Next Level Week 02 proposed by the [Rocketseat](https:/
 
 ## Contents
 
+1. [Repository Objective](#Repository-Objective)
 1. [Setting Up The Development Environment](#Setting-Up-The-Development-Environment)
-1. [First Day: ReactJS and Web Structure](#First-Day:-ReactJS-and-Web-Structure)
-    1. [Application Description](#Application-Description)
-    1. [Web Interface](#Web-Interface)
+1. [ReactJS and Web Structure](#ReactJS-and-Web-Structure)
+   1. [Application Description](#Application-Description)
+   1. [Web Interface](#Web-Interface)
+      - [Template App](#Template-App)
+      - [Global CSS](#Global-CSS)
+
+## Repository Objective
+
+The purpouse of this repository is to try to describe the step by step used to develop the application, in order to establish documentation for future projetcs using React.
 
 ## Setting Up The Development Environment
 
 To start the development of the project, it is necessary to install [NodeJs](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Expo](https://expo.io/). The following table lists all the technologies used on this application:
  
- Technology | Short Description
- -----------|------------------
+ | Technology | Short Description |
+ |-----------:|:------------------|
  [NodeJs](https://nodejs.org/) + [NPM](https://www.npmjs.com/) | Asynchronous event-driven JavaScript runtime with the package manager "NPM".
  [Yarn](https://yarnpkg.com/) | Package Manager.
  [Expo](https://expo.io/) | Framework and platform for universal React applications.
  [ReactJS](https://reactjs.org/) | A JavaScript library for building user interfaces.
- [React Native]() | 
- [TypeScript]() |
+ [React Native](https://reactnative.dev/) | For create native apps for Android and IOS using React
+ [TypeScript](https://www.typescriptlang.org/) | Typed superset for Javascript.
 
-## First Day: ReactJS and Web Structure
+## ReactJS and Web Structure
 
 ### Application Description
 
 The application's name is **Proffy**. It is a study platform that will connect teachers who teach private lessons and students who want to find specific subjects to study, improve school grades or prepare for a specific exam.
 
 ### Web Interface
+
+#### Template App
 
 To start developing the application's web interface, you need to create a template application using the React with TypeScript by running the following command in the main project folder:
 ```zsh
@@ -103,5 +112,65 @@ Finally, it is necessary to clean the **index.html** file from the public folder
       </body>
     </html>
  ```
+#### Global CSS
 
- 
+The next step is to create the **assets** folder within the **src** folder. Inside the **assests** folder, you should place the **images** folder that was provided during the event. This folder contains the icons and svg images that will be used in the App.
+
+Now you need to create the folder **styles** inside the folder **assests**. This folder will contain the file **global.css**. This file will be used to define some styles of the application that will be used on all pages. All colors were defined as variables as following:
+
+ - global.css
+ ```css
+    :root {
+        --color-background: #F0F0F7;
+        --color-primary-lighter: #9871F5;
+        --color-primary-light: #916BEA;
+        --color-primary: #8257E5;
+        --color-primary-dark: #774DD6;
+        --color-primary-darker: #6842C2;
+        --color-secundary: #04D361;
+        --color-secundary-dark: #04BF58;
+        --color-title-in-primary: #FFFFFF;
+        --color-text-in-primary: #D4C2FF;
+        --color-text-title: #32264D;
+        --color-text-complement: #9C98A6;
+        --color-text-base: #6A6180;
+        --color-line-in-white: #E6E6F0;
+        --color-input-background: #F8F8FC;
+        --color-button-text: #FFFFFF;
+        --color-box-base: #FFFFFF;
+        --color-box-footer: #FAFAFC;
+    
+        font-size: 60%;
+    }
+ ```
+Then, it will be defined that the padding and margin are zero for all elements. 
+
+```css
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+```
+In addition, a height equal to "100vh" will be defined for **html**, **body** and the **root** div to make the page always occupy 100% of the screen. Then the body background will be set to the `--color-background` variable.
+
+```css
+    html, body, #root {
+        height: 100vh;
+    }
+
+    body {
+        background: var(--color-background);
+    }
+```
+Anothers styles configurantions was added to the **global.css** as below:
+
+```css
+
+```
+
+To apply the CSS styles to the application it is necessary to import the **global.css** in the **App.tsx**.
+
+```JavaScript
+    import './assets/styles/global.css';
+```
