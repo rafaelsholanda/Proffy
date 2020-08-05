@@ -165,12 +165,39 @@ In addition, a height equal to "100vh" will be defined for **html**, **body** an
 ```
 Anothers styles configurantions was added to the **global.css** as below:
 
+ - Google Fonts: Archivo, Poppins
 ```css
+    #root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    body,
+    input,
+    button,
+    textarea {
+        font: 500 1.6rem Poppins;
+    }
+
+    .container {
+        width: 90vw;
+        max-width: 700px;
+    }
+
+    @media (min-width: 700px) {
+        :root {
+            font-size: 62.5%;
+        }
+    }
 ```
 
 To apply the CSS styles to the application it is necessary to import the **global.css** in the **App.tsx**.
-
+ - App.tsx
 ```JavaScript
     import './assets/styles/global.css';
+```
+ - index.html
+```html
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
 ```
