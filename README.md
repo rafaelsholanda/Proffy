@@ -202,3 +202,7 @@ To apply the CSS styles to the application it is necessary to import the **globa
    ```html
       <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
    ```
+
+   ## Server
+
+   "target": "es2017"
