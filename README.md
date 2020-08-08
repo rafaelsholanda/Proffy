@@ -1,4 +1,8 @@
-# nextlevelweek02
+# #nextlevelweek02
+
+<h1 align="center">
+   <img alt="NextLevelWeek02" title="#NextLevelWeek02" src="./web/src/assets/images/banner.png"/>
+</h1>
 
 Application developed at Next Level Week 02 proposed by the [Rocketseat](https://rocketseat.com.br/). This event took place from August 3 to August 7, 2020.
 

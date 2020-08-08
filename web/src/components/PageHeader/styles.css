@@ -45,7 +45,7 @@
   font-size: 1.6rem;
   line-height: 2.6rem; 
   color: var(--color-text-in-primary);
-  margin-top: 2.4rem;
+  margin-top: 1.4rem;
 }
 
 @media (min-width: 700px) {
@@ -60,8 +60,8 @@
   .page-header .header-content {
     flex: 1;
     max-width: 740px;
-    margin: 0 auto;
-    padding-bottom: 48px;
+    margin: -4rem auto;
+    padding-bottom: 6.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
