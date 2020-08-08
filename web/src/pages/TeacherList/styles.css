@@ -16,7 +16,6 @@
   width: 90%;
 }
 
-
 @media (min-width:700px) {
   #page-teacher-list {
     max-width: 100%; 
@@ -27,7 +26,12 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 16px;
     position: absolute;
-    bottom: -28px;
+    bottom: 8px;
+  }
+
+  #search-teachers .input-block + .input-block,
+  #search-teachers .select-block + .select-block{
+    margin-top: 0;
   }
 
   #page-teacher-list main {
