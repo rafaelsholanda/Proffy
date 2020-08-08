@@ -10,6 +10,13 @@ import warningIcon from '../../assets/images/icons/warning.svg'
 import './styles.css';
 
 function TeacherForm() {
+  const [name, setName] = useState('');
+  const [avatar, setAvatar] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
+  const [bio, setBio] = useState('');
+  const [subject, setSubject] = useState('');
+  const [cost, setCost] = useState('');
+
   const [scheduleItems, setScheduleItems] = useState([
     {week_day: 0, from: '', to: ''},
   ]);
@@ -32,10 +39,30 @@ function TeacherForm() {
         <fieldset>
           <legend>Seus dados</legend>
 
-          <Input name="name" label="Nome completo"/>
-          <Input name="avatar" label="Avatar"/>
-          <Input name="whatsapp" label="Whatsapp"/>
-          <Textarea name="bio" label="Biografia" />
+          <Input 
+            name="name" 
+            label="Nome completo" 
+            value={name}
+            onChange={(e) => {setName(e.target.value)}}
+          />
+          <Input 
+            name="avatar" 
+            label="Avatar"
+            value={avatar}
+            onChange={(e) => {setAvatar(e.target.value)}}
+          />
+          <Input 
+            name="whatsapp" 
+            label="WhatsApp"
+            value={whatsapp}
+            onChange={(e) => {setWhatsapp(e.target.value)}}
+          />
+          <Textarea 
+            name="bio" 
+            label="Biografia"
+            value={bio}
+            onChange={(e) => {setBio(e.target.value)}}
+          />
         </fieldset>
         
         <fieldset>
@@ -44,6 +71,8 @@ function TeacherForm() {
           <Select 
             name="subject" 
             label="Matéria"
+            value={subject}
+            onChange={(e) => {setSubject(e.target.value)}}
             options={[
               {value: 'Artes', label: 'Artes'},
               {value: 'Biologia', label: 'Biologia'},
