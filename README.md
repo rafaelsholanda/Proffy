@@ -210,3 +210,7 @@ To apply the CSS styles to the application it is necessary to import the **globa
    ## Server
 
    "target": "es2017"
+
+   # Extra
+
+   https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970
