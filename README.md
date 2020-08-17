@@ -120,6 +120,9 @@ Para rodar o servidor execute as etapas a seguir:
       ```zsh
          $ yarn start
       ```
+
+[![asciicast](https://asciinema.org/a/353884.svg)](https://asciinema.org/a/353884)
+
 O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL http://localhost:3333. Os testes de comunicação com o servidor podem ser realizados através do [Insominia](https://insomnia.rest/). Use o arquivo [Insomnia_resquests.json](./Insomnia_requests.json) para efetuar os testes.
 
 ### Web
