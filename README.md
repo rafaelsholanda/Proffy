@@ -121,7 +121,7 @@ Para rodar o servidor execute as etapas a seguir:
          $ yarn start
       ```
 
-[![asciicast](https://asciinema.org/a/353884.svg)](https://asciinema.org/a/353884)
+<a href="https://asciinema.org/a/353884?autoplay=1" target="_blank"><img src="https://asciinema.org/a/353884.svg" /></a>
 
 O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL http://localhost:3333. Os testes de comunicação com o servidor podem ser realizados através do [Insominia](https://insomnia.rest/). Use o arquivo [Insomnia_resquests.json](./Insomnia_requests.json) para efetuar os testes.
 
