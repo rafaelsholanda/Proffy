@@ -36,7 +36,7 @@
 
 <h3 align="center">📚 Proffy é uma plataforma on-line que ajuda alunos a encontrar professores particulares 👨‍🏫 </h3>
 
-## Objetivo do Repositório
+# Objetivo do Repositório
 
 Essa aplicação foi proposta e desenvolvida durante o evento **Next Level Week 2.0** da [Rocketseat](https://rocketseat.com.br/), ocorrido entre os dias 3 e 7 de Agosto de 2020. Este repositório se propõe a demonstrar a utilização das diversas tecnologias apresentadas no evento na construção de uma aplicação completa, do back-end ao front-end web e mobile. A aplicação não está finalizada e este repositório ainda encontra-se em desenvolvimento.
 
@@ -44,7 +44,7 @@ Essa aplicação foi proposta e desenvolvida durante o evento **Next Level Week 
 
 **[#nextlevelweek](https://github.com/search?q=%23nextlevelweek)**
 
-## Índice
+# Índice
 
    * [Objetivo do Repositório](#Objetivo-do-Repositório)
    * [Índice](#Índice)
@@ -58,7 +58,7 @@ Essa aplicação foi proposta e desenvolvida durante o evento **Next Level Week 
       * [Features](#Features)
       * [Demonstração da Aplicação](#Demonstração-da-Aplicação)
 
-## Sobre o Projeto
+# Sobre o Projeto
 
 O **Proffy** é uma plataforma para conectar alunos aos professores que fornecem aulas particulares. 
 
@@ -79,27 +79,51 @@ O projeto possui 3 módulos principais, [server](./server), [web](./web) e [mobi
 
    - **Mobile**: é o módulo do App desenvolvido usando o [React-Native](https://reactnative.dev/).
 
-### Tecnologias
+## Tecnologias
 
 A tabela abaixo resume as tecnologias que foram utilizadas para o desenvolvimento da aplicação:
 
 Tecnologia | Descrição
 :---------:|:---------
-[Axios](https://github.com/axios/axios) | Cliente HTTP  para aplicações **WEB** e **Node** baseado em *promisses*.
+[Axios](https://github.com/axios/axios) | Cliente HTTP  para aplicações **WEB** e **Node** baseado em *promises*.
 [Expo](https://expo.io/) | Framework para desenvolvimento de aplicações usando **React**.
 [Express](https://expressjs.com/) | Framework web para gerenciamento de rotas no **Node.js**.
+[Insomnia](https://insomnia.rest/) | Software que auxilia a debugar a aplicação por meio de *requests* personalizadas.
 [Knex](http://knexjs.org/) | Construtor de consultas em SQL para os principais tipos de bancos de dados.
 [Node](https://nodejs.org/) | Runtime do JavaScript para desenvolvimento de aplicações web escaláveis e com eventos assíncronos.
 [React](https://reactjs.org/) | Biblioteca Javascript para desenvolvimento de interfaces de usuário.
 [React-Native](https://reactnative.dev/) | Biblioteca Javascript para desenvolvimento de interfaces nativas de aplicativos usando o **React**.
-[TypeScript](https://www.typescriptlang.org/) | 
+[TypeScript](https://www.typescriptlang.org/) | Liguagem baseada no JavaScript com o recurso de tipagem para escalabilidade dos projetos.
+[Yarn](https://yarnpkg.com/) | Gerenciador de pacotes e dependências do projeto.
 
+## Instalação
 
+Esse tópico descreve as etapas requeridas para testar o projeto em um computador. Em razão da divisão em três módulos é importante executar o back-end, que é o módulo [*server*](#Server), e mantê-lo rodando antes de executar o módulo [*web*](#Web) ou o módulo [*mobile*](#Mobile), sendo os dois últimos *front-ends* independentes entre si e que se comunicam com o *server*. Os exemplos descritos abaixo utilizam o gerenciador de pacotes [Yarn](https://yarnpkg.com/), mas também pode ser utilizado o [NPM](https://www.npmjs.com/).
 
-### Instalação
-#### Server
-#### Web
-#### Mobile
-### Como Usar
-### Features
-### Demonstração da Aplicação
+> Para executar essa aplicação no computador é necessário ter o [Git](https://git-scm.com/) e o [Node](https://nodejs.org/) instalados.
+
+### Server
+
+Para rodar o servidor execute as etapas a seguir:
+
+   1. Clone o repositório do Github para uma pasta no seu computador através do Git:
+      ```zsh
+         $ git clone https://github.com/rafaelsholanda/proffy
+      ```
+   1. Instale as dependências dentro da pasta **server**:
+      ```zsh
+         $ cd proffy/server
+         
+         $ yarn install
+      ```
+   1. Para executar o servidor use o script:
+      ```zsh
+         $ yarn start
+      ```
+O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL http://localhost:3333. Os testes de comunicação com o servidor podem ser realizados através do [Insominia](https://insomnia.rest/). Use o arquivo [Insomnia_resquests.json](./Insomnia_requests.json) para efetuar os testes.
+
+### Web
+### Mobile
+## Como Usar
+## Features
+## Demonstração da Aplicação
