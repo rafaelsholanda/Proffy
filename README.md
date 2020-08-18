@@ -57,6 +57,7 @@ Essa aplicação foi proposta e desenvolvida durante o evento **Next Level Week 
       * [Como Usar](#Como-Usar)
       * [Features](#Features)
       * [Demonstração da Aplicação](#Demonstração-da-Aplicação)
+         * [Screenshots](#Screenshots)
 
 # Sobre o Projeto
 
@@ -100,7 +101,7 @@ Tecnologia | Descrição
 
 Esse tópico descreve as etapas requeridas para testar o projeto em um computador. Em razão da divisão em três módulos é importante executar o back-end, que é o módulo [*server*](#Server), e mantê-lo rodando antes de executar o módulo [*web*](#Web) ou o módulo [*mobile*](#Mobile), sendo os dois últimos *front-ends* independentes entre si e que se comunicam com o *server*. Os exemplos descritos abaixo utilizam o gerenciador de pacotes [Yarn](https://yarnpkg.com/), mas também pode ser utilizado o [NPM](https://www.npmjs.com/).
 
-> Para executar essa aplicação no computador é necessário ter o [Git](https://git-scm.com/) e o [Node](https://nodejs.org/) instalados.
+> Para executar essa aplicação no computador é necessário ter o [Git](https://git-scm.com/), o [Node](https://nodejs.org/) e o [Expo-cli](https://expo.io/) instalados. Além disso é recomendado instalar o aplicativo Expo no seu smartphone [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www) ou [IOS](https://itunes.apple.com/app/apple-store/id982107779).
 
 ### Server
 
@@ -112,7 +113,7 @@ Para rodar o servidor execute as etapas a seguir:
       ```
    1. Instale as dependências dentro da pasta **server**:
       ```zsh
-         $ cd proffy/server
+         $ cd Proffy/server
          
          $ yarn install
       ```
@@ -120,13 +121,87 @@ Para rodar o servidor execute as etapas a seguir:
       ```zsh
          $ yarn start
       ```
-
-<a href="https://asciinema.org/a/353884?autoplay=1" target="_blank"><img src="https://asciinema.org/a/353884.svg" /></a>
+![server_install_animation](./assets/server_install_animation.svg)
 
 O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL http://localhost:3333. Os testes de comunicação com o servidor podem ser realizados através do [Insominia](https://insomnia.rest/). Use o arquivo [Insomnia_resquests.json](./Insomnia_requests.json) para efetuar os testes.
 
 ### Web
+
+Para inicializar a interface **web** é necessário, com o back-end (**server**) em execução, executar o seguinte:
+
+   1. Instalar as dependências do módulo:
+       ```zsh
+         $ cd Proffy/web
+         
+         $ yarn install
+      ```
+   1. Para executar o módulo use o script:
+      ```zsh
+         $ yarn start
+      ```
+
+![web_install_animation](./assets/web_install_animation.svg)
+
+A interface Web vai ficar em execução na porta 3000: http://localhost:3000/.
+
+<p align="center">
+   <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot.png"/>
+</p>
+
 ### Mobile
+
+Para executar a interface **mobile** é necessário manter o back-end (**server**) em execução e em seguida seguir as etapas:
+
+   1. Instalar as dependências do módulo:
+      ```zsh
+         $ cd Proffy/web
+         
+         $ yarn install
+      ```
+   1. Para executar o módulo use o script:
+      ```zsh
+         $ yarn start
+      ```
+
+![mobile_install_animation](./assets/mobile_install_animation.svg)
+
+Para abrir uma instância da aplicação no smartphone primeiro deve-se scanear o QR-code que será gerado durante a inicialização através do aplicativo **Expo**. O aplicativo não vai conseguir se conectar ao banco de dados pois é necessário corrigir o endereço da aplicação no arquivo [api.ts](./mobile/src/services/api.ts) localizado no endereço [./mobile/src/services/api.ts](./mobile/src/services/api.ts). 
+
+Nesse arquivo você precisar substituir o **baseURL** pelo endereço da aplicação indicado na instância do Expo mantendo a porta '3333': 
+
+   ``` TypeScript
+      import axios from 'axios';
+
+      const api = axios.create({
+         baseURL: 'http://192.168.1.13:3333'
+      });
+
+      export default api;
+   ```
+> exp://192.168.1.13:19000
+
+<p align="center">
+   <img alt="Proffy - Expo" title="mobile_expo_screenshot" src="./assets/mobile_expo_screenshot.png"/>
+</p>
+
+Por exemplo, se o endereço indicado na instância do Expo for:
+
+> exp://192.168.1.13:19000
+
+Então a variável **baseURL** deverá ser: 
+
+   ```Typescript
+      baseURL: 'http://192.168.1.13:3333'
+   ```
+
 ## Como Usar
 ## Features
 ## Demonstração da Aplicação
+
+### Screenshots
+
+<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_1" src="./assets/mobile_screenshot_1.jpg"/> 
+<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_2.jpg"/>
+<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_3.jpg"/>
+<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_4.jpg"/>
+<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_5" src="./assets/mobile_screenshot_5.jpg"/>
