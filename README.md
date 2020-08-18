@@ -200,8 +200,10 @@ Então a variável **baseURL** deverá ser:
 
 ### Screenshots
 
-<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_1" src="./assets/mobile_screenshot_1.jpg"/> 
-<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_2.jpg"/>
-<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_3.jpg"/>
-<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_4.jpg"/>
-<img style="max-width: 300px" alt="Proffy - Mobile" title="mobile_screenshot_5" src="./assets/mobile_screenshot_5.jpg"/>
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_1" src="./assets/mobile_screenshot_1.jpg"/> 
+   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_2.jpg"/>
+   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_3.jpg"/>
+   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_4.jpg"/>
+   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_5" src="./assets/mobile_screenshot_5.jpg"/>
+</p>
