@@ -15,6 +15,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "serialize-javascript": "4.0.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -41,7 +42,7 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.5"
   },
-  "resolutions": { 
-    "serialize-javascript": "^3.1.0" 
+  "resolutions": {
+    "serialize-javascript": "^3.1.0"
   }
 }
