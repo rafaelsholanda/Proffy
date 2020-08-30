@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img alt="Proffy - Banner" title="Proffy" src="./assets/banner.png"/>
+   <img style="width:600px" alt="Proffy - Banner" title="Proffy" src="./assets/banner.png"/>
 </h1>
 
 <h4 align="center">
@@ -58,6 +58,7 @@ Essa aplicação foi proposta e desenvolvida durante o evento **Next Level Week 
       * [Features](#Features)
       * [Demonstração da Aplicação](#Demonstração-da-Aplicação)
          * [Screenshots](#Screenshots)
+   * [Licença](#Licença)
 
 # Sobre o Projeto
 
@@ -127,7 +128,7 @@ O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL h
 
 ### Web
 
-Para inicializar a interface **web** é necessário, com o back-end (**server**) em execução, executar o seguinte:
+Para inicializar a interface **web** é necessário manter o back-end (**server**) em execução e proceder da seguinte forma:
 
    1. Instalar as dependências do módulo:
        ```zsh
@@ -180,8 +181,8 @@ Nesse arquivo você precisar substituir o **baseURL** pelo endereço da aplicaç
    ```
 > exp://192.168.1.13:19000
 
-<p align="center">
-   <img alt="Proffy - Expo" title="mobile_expo_screenshot" src="./assets/mobile_expo_screenshot.png"/>
+<p align="center" >
+   <img style="padding: 2px; width:300px" alt="Proffy - Expo" title="mobile_expo_screenshot" src="./assets/mobile_expo_screenshot.png"/>
 </p>
 
 Por exemplo, se o endereço indicado na instância do Expo for:
@@ -195,15 +196,32 @@ Então a variável **baseURL** deverá ser:
    ```
 
 ## Como Usar
+
+A 
+
 ## Features
 ## Demonstração da Aplicação
 
 ### Screenshots
 
+A seguir seguem algumas telas da aplicação mobile:
+
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_1" src="./assets/mobile_screenshot_1.jpg"/> 
-   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_2.jpg"/>
-   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_3.jpg"/>
-   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_4.jpg"/>
-   <img width="300px" alt="Proffy - Mobile" title="mobile_screenshot_5" src="./assets/mobile_screenshot_5.jpg"/>
+
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_1" src="./assets/mobile_screenshot_1.jpg"/> 
+
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_2.jpg"/>
+
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_3.jpg"/>
+
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_4.jpg"/>
+
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_5" src="./assets/mobile_screenshot_5.jpg"/>
+
 </p>
+
+# Licença
+
+Este projeto está sobre a [licença MIT](./LICENSE.md).
+
+[Me mande um e-mail](rafaelholanda3105@gmail.com) ou [fale comigo no Linkedin](https://www.linkedin.com/in/rafaelsholanda/)
