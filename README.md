@@ -120,7 +120,7 @@ Para rodar o back-end execute as etapas a seguir:
       ```
 
 <p align="center">
-   <img alt="Instalação do Módulo Server" title="server_install_animation" width="500px" src="./assets/server_install_animation.svg">
+   <img alt="Instalação do Módulo Server" title="server_install_animation" width="600px" src="./assets/server_install_animation.svg">
 </p>
 
 O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL http://localhost:3333. Os testes de comunicação com o servidor podem ser realizados através do [Insominia](https://insomnia.rest/). Use o arquivo [Insomnia_resquests.json](./Insomnia_requests.json) para efetuar os testes básicos.
@@ -141,13 +141,13 @@ Para inicializar a interface **web** é necessário manter o back-end (**server*
       ```
 
 <p align="center">
-   <img alt="Instalação do Módulo Web" title="web_install_animation" width="500px" src="./assets/web_install_animation.svg">
+   <img alt="Instalação do Módulo Web" title="web_install_animation" width="600px" src="./assets/web_install_animation.svg">
 </p>
 
 A interface Web vai ficar em execução na porta 3000: http://localhost:3000/.
 
 <p align="center">
-   <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_1.png" width="500px"/>
+   <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_1.png" width="600px"/>
 </p>
 
 ### Mobile
@@ -166,7 +166,7 @@ Para executar a interface **mobile** é necessário manter o back-end (**server*
       ```
 
 <p align="center">
-   <img alt="Instalação do Módulo Mobile" title="mobile_install_animation" width="500px" src="./assets/mobile_install_animation.svg">
+   <img alt="Instalação do Módulo Mobile" title="mobile_install_animation" width="600px" src="./assets/mobile_install_animation.svg">
 </p>
 
 Para abrir uma instância da aplicação no smartphone primeiro deve-se scanear o QR-code que será gerado durante a inicialização através do aplicativo **Expo**. O aplicativo não vai conseguir se conectar ao banco de dados pois é necessário corrigir o endereço da aplicação no arquivo [api.ts](./mobile/src/services/api.ts) localizado no endereço [./mobile/src/services/api.ts](./mobile/src/services/api.ts). 
@@ -185,7 +185,7 @@ Nesse arquivo você precisar substituir o **baseURL** pelo endereço da aplicaç
 > exp://192.168.1.13:19000
 
 <p align="center" >
-   <img width="500px" alt="Proffy - Expo" title="mobile_expo_screenshot" src="./assets/mobile_expo_screenshot.png"/>
+   <img width="600px" alt="Proffy - Expo" title="mobile_expo_screenshot" src="./assets/mobile_expo_screenshot.png"/>
 </p>
 
 Por exemplo, se o endereço indicado na instância do Expo for:
@@ -205,7 +205,7 @@ A aplicação possui dois tipos de usuários principais: o professor e o aluno.
    - O professor deverá se cadastrar na plataforma web com seus dados de contato e informações referentes às aulas que pretende oferecer. Nessa versão esse cadastro somente poderá ser realizado apenas na interface web.
 
    <p align="center">
-      <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_2.png" width="500px"/>
+      <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_2.png" width="600px"/>
    </p>
 
    - O aluno poderá procurar pelos professores disponíveis em ambas plataformas, web e mobile, por meio dos filtros de "dia da semana", "horário disponível" e "disciplina". Depois de escolher o professor ele poderá entrar em contato por meio do Whatsapp. Além disso o aluno poderá criar uma lista de professores favoritos que ficará disponível apenas no aplicativo mobile.
