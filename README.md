@@ -54,9 +54,6 @@ Essa aplicação foi proposta e desenvolvida durante o evento **Next Level Week 
          * [Server](#Server)
          * [Mobile](#Mobile)
       * [Como Usar](#Como-Usar)
-      * [Features](#Features)
-      * [Demonstração da Aplicação](#Demonstração-da-Aplicação)
-         * [Screenshots](#Screenshots)
    * [Licença](#Licença)
 
 # Sobre o Projeto
