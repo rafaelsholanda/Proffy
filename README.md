@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img style="width:600px" alt="Proffy - Banner" title="Proffy" src="./assets/banner.png"/>
+   <img width="600px" alt="Proffy - Banner" title="Proffy" src="./assets/banner.png"/>
 </h1>
 
 <h4 align="center">
@@ -142,7 +142,7 @@ Para inicializar a interface **web** é necessário manter o back-end (**server*
 A interface Web vai ficar em execução na porta 3000: http://localhost:3000/.
 
 <p align="center">
-   <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_1.png"/>
+   <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_1.png" height="360px"/>
 </p>
 
 ### Mobile
@@ -178,7 +178,7 @@ Nesse arquivo você precisar substituir o **baseURL** pelo endereço da aplicaç
 > exp://192.168.1.13:19000
 
 <p align="center" >
-   <img style="padding: 2px; width:300px" alt="Proffy - Expo" title="mobile_expo_screenshot" src="./assets/mobile_expo_screenshot.png"/>
+   <img width="500px" alt="Proffy - Expo" title="mobile_expo_screenshot" src="./assets/mobile_expo_screenshot.png"/>
 </p>
 
 Por exemplo, se o endereço indicado na instância do Expo for:
@@ -203,12 +203,10 @@ A aplicação possui dois tipos de usuários principais: o professor e o aluno.
 
    - O aluno poderá procurar pelos professores disponíveis em ambas plataformas, web e mobile, por meio dos filtros de "dia da semana", "horário disponível" e "disciplina". Depois de escolher o professor ele poderá entrar em contato por meio do Whatsapp. Além disso o aluno poderá criar uma lista de professores favoritos que ficará disponível apenas no aplicativo mobile.
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_1.jpg"/>
-
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_2.jpg"/>
-
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_3.jpg"/>
+<p align="center">
+   <img width="200px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_1.jpg"/>
+   <img width="200px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_2.jpg"/>
+   <img width="200px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_3.jpg"/>
 </p>
 
 # Licença
