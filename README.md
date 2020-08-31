@@ -31,7 +31,6 @@
    <a href="https://github.com/rafaelsholanda/Proffy/blob/master/LICENSE.md">
       <img alt="GitHub license" src="https://img.shields.io/github/license/rafaelsholanda/Proffy?style=plastic">
    </a>
-
 </p>
 
 <h3 align="center">📚 Proffy é uma plataforma on-line que ajuda alunos a encontrar professores particulares 👨‍🏫 </h3>
@@ -77,9 +76,9 @@ O projeto possui 3 módulos principais, [server](./server), [web](./web) e [mobi
 
    - **Server**: back-end da aplicação que contém o banco de dados e a API para comunicação com as rotas por meio das requisições dos clientes (front-end web e mobile). Escrito em [Typescript](https://www.typescriptlang.org/).
 
-   - **Web**: front-end web que contém as páginas do módulo web. O design desse módulo foi escrito priorizando o desempenho mobile (*mobile first web design*) com responsividade para desktop escrito com base no [React](https://reactjs.org/).
+   - **Web**: front-end web que contém as páginas do módulo web. O design desse módulo foi escrito priorizando o desempenho mobile (*mobile first web design*) com responsividade para desktop, e escrito com base no [React](https://reactjs.org/).
 
-   - **Mobile**: é o módulo do App desenvolvido usando o [React-Native](https://reactnative.dev/).
+   - **Mobile**: é o módulo do aplicativo desenvolvido usando o [React-Native](https://reactnative.dev/) e testado em um dispositivo Android.
 
 ## Tecnologias
 
@@ -92,7 +91,7 @@ Tecnologia | Descrição
 [Express](https://expressjs.com/) | Framework web para gerenciamento de rotas no **Node.js**.
 [Insomnia](https://insomnia.rest/) | Software que auxilia a debugar a aplicação por meio de *requests* personalizadas.
 [Knex](http://knexjs.org/) | Construtor de consultas em SQL para os principais tipos de bancos de dados.
-[Node](https://nodejs.org/) | Runtime do JavaScript para desenvolvimento de aplicações web escaláveis e com eventos assíncronos.
+[Node.js](https://nodejs.org/) | Runtime do JavaScript para desenvolvimento de aplicações web escaláveis e com eventos assíncronos.
 [React](https://reactjs.org/) | Biblioteca Javascript para desenvolvimento de interfaces de usuário.
 [React-Native](https://reactnative.dev/) | Biblioteca Javascript para desenvolvimento de interfaces nativas de aplicativos usando o **React**.
 [TypeScript](https://www.typescriptlang.org/) | Liguagem baseada no JavaScript com o recurso de tipagem para escalabilidade dos projetos.
@@ -106,7 +105,7 @@ Esse tópico descreve as etapas requeridas para testar o projeto em um computado
 
 ### Server
 
-Para rodar o servidor execute as etapas a seguir:
+Para rodar o back-end execute as etapas a seguir:
 
    1. Clone o repositório do Github para uma pasta no seu computador através do Git:
       ```zsh
@@ -124,7 +123,7 @@ Para rodar o servidor execute as etapas a seguir:
       ```
 ![server_install_animation](./assets/server_install_animation.svg)
 
-O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL http://localhost:3333. Os testes de comunicação com o servidor podem ser realizados através do [Insominia](https://insomnia.rest/). Use o arquivo [Insomnia_resquests.json](./Insomnia_requests.json) para efetuar os testes.
+O servidor vai ficar rodando na porta 3333 e pode ser acessado através da URL http://localhost:3333. Os testes de comunicação com o servidor podem ser realizados através do [Insominia](https://insomnia.rest/). Use o arquivo [Insomnia_resquests.json](./Insomnia_requests.json) para efetuar os testes básicos.
 
 ### Web
 
@@ -146,7 +145,7 @@ Para inicializar a interface **web** é necessário manter o back-end (**server*
 A interface Web vai ficar em execução na porta 3000: http://localhost:3000/.
 
 <p align="center">
-   <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot.png"/>
+   <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_1.png"/>
 </p>
 
 ### Mobile
@@ -197,27 +196,22 @@ Então a variável **baseURL** deverá ser:
 
 ## Como Usar
 
-A 
+A aplicação possui dois tipos de usuários principais: o professor e o aluno.
 
-## Features
-## Demonstração da Aplicação
+   - O professor deverá se cadastrar na plataforma web com seus dados de contato e informações referentes às aulas que pretende oferecer. Nessa versão esse cadastro somente poderá ser realizado apenas na interface web.
 
-### Screenshots
+   <p align="center">
+      <img alt="Proffy - Web" title="web_screenshot" src="./assets/web_screenshot_2.png"/>
+   </p>
 
-A seguir seguem algumas telas da aplicação mobile:
+   - O aluno poderá procurar pelos professores disponíveis em ambas plataformas, web e mobile, por meio dos filtros de "dia da semana", "horário disponível" e "disciplina". Depois de escolher o professor ele poderá entrar em contato por meio do Whatsapp. Além disso o aluno poderá criar uma lista de professores favoritos que ficará disponível apenas no aplicativo mobile.
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_1.jpg"/>
 
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_1" src="./assets/mobile_screenshot_1.jpg"/> 
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_2.jpg"/>
 
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_2" src="./assets/mobile_screenshot_2.jpg"/>
-
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_3" src="./assets/mobile_screenshot_3.jpg"/>
-
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_4.jpg"/>
-
-   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_5" src="./assets/mobile_screenshot_5.jpg"/>
-
+   <img style="padding: 2px; width:150px" alt="Proffy - Mobile" title="mobile_screenshot_4" src="./assets/mobile_screenshot_3.jpg"/>
 </p>
 
 # Licença
