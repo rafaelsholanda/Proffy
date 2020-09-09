@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 
 import db from '../database/connections';
-import hashPassword from '../utils/hashPassword';
 
 export default class UsersController{
 
@@ -14,9 +15,9 @@ export default class UsersController{
       avatar,
     } = request.body;
 
-    const existThisEmail = await db('users').select('users.email').where('email', String(email));
+    const emailExists = await db('users').select('users.email').where('email', String(email));
 
-    if (!existThisEmail[0]) {
+    if (!emailExists[0]) {
 
       const trx = await db.transaction();
  
@@ -25,7 +26,7 @@ export default class UsersController{
           name,
           surname,
           email,
-          password: await hashPassword(password),
+          password: await bcrypt.hash(password, 8),
           avatar,
           whatsapp: '',
           bio: '',
@@ -45,8 +46,35 @@ export default class UsersController{
       }    
     } else {
       return response.status(400).json({
-        alert: 'This email already exists on our database'
+        alert: 'This email already exists on database'
       });
-    }
-  }
-}
+    };
+  };
+
+  async authenticate(request: Request, response: Response){
+    const {email, password} = request.body;
+
+    try {
+      const user = await db('users').select('*').where('email', String(email));
+            
+      if (!user[0]) {
+        return response.status(400).json({ Error:'User not found!' });
+      };
+
+      if (!(await bcrypt.compare(password, user[0].password))) {
+        return response.status(400).json({ Error:'Invalid password!' });
+      };
+
+      const token = jwt.sign({id: user[0].id}, "secret", {expiresIn: 86400});
+
+      return response.json({
+        user: `${user[0].id}`,
+        token: `${token}`
+      });
+    
+    } catch (err) {
+      console.log(err);
+      return response.status(400).json({ Error:'Unable to Authenticate' });
+    };
+  };
+};
